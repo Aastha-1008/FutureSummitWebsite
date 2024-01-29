@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@400;700&display=swap');
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+
+.home_container {
+    position: absolute;
+    top: 0%;
+    left: 3%;
+    z-index: -1;
+    overflow-y: hidden;
+    transform: scale(1.1);
+
+    .homeimg {
+        height: 130vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .line1,.line2 {
+        position: absolute;
+        top: 0%;
+        z-index: 3;
+    }
+
+    .line2 {
+        right: 0%;
+    }
+
+    .zoomInEffect {
+        height: 130vh;
+        overflow-y: hidden;
+        animation: zoomIn 10s ease-in-out;
+    }
+
+    .bg_img {
+        height: 130vh;
+        img {
+            height: 150vh;
+            width: 100vw;
+            background-size: cover;
+        }
+    }
+
+    .home_img_content {
+        width: 100%;
+        position: absolute;
+        top: 8%;
+        text-align: center;
+        color: white;
+        font-family: 'Catamaran', sans-serif;
+
+        @keyframes annual {
+            from {
+                top: 0%
+            }
+
+            to {
+                top: 10%
+            }
+        }
+
+        .annual {
+            animation: annual 3s ease;
+        }
+
+        h1 {
+            width: 61%;
+            font-size: 79px;
+            font-weight: bolder;
+            margin: 0rem auto;
+            line-height: 100px;
+            overflow-y: hidden;
+        }
+
+        h2 {
+            background-color: white;
+            color: rgb(243, 144, 48);
+            width: 60%;
+            border-radius: 10px 10px 0px 0px;
+            margin: 0rem auto;
+            padding: .3rem;
+        }
+
+        .rtol {
+            @keyframes rtol {
+                from {
+                    transform: translate(0, 10);
+                }
+
+                to {
+                    transform: translate(0, 0);
+                }
+            }
+
+            animation: rtol 1s ease;
+        }
+
+        .home_img_data {
+            width: 50%;
+            margin: 2rem auto 1rem auto;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .annual {
+            font-size: 30px;
+            font-weight: bold;
+            padding-bottom: 1rem;
+
+        }
+
+        button {
+            background-color: rgb(24, 93, 167);
+            border: none;
+            padding: 1rem 2rem;
+            color: white;
+            font-weight: 600 !important;
+        }
+
+        button:hover {
+            background-color: rgba(13, 9, 58, 0.8);
+        }
+    }
+
+    .event_overview::before {
+        background-image: url("https://ksa.futurebanksummit.com/wp-content/uploads/2023/05/double-exposure-businessman-using-tablet-with-cityscape-financial-graph-blurred-buildi-1-1.jpg");
+        filter: grayscale(100%);
+    }
+
+    .event_overview {
+        padding: 5.5rem 15.5rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+
+
+        .overviewImg {
+            background-color: white;
+            width: 75%;
+            height: 420px;
+            border-radius: 30px;
+            overflow: hidden;
+            margin-left: 2rem;
+            box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.25);
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .overview_content {
+            margin-left: -3rem;
+
+            h1 {
+                text-align: center;
+                padding-bottom: 1.3rem;
+            }
+
+            p {
+                text-align: justify;
+                font-family: 'Poppins', sans-serif;
+                font-size: .91rem;
+                color: rgba(50, 51, 51, .8);
+                line-height: 1.1rem;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .statistics {
+        background-image: url("https://ksa.futurebanksummit.com/wp-content/uploads/2021/08/noch-ogni-er-riiad.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        font-family: 'Roboto Slab', sans-serif;
+
+        .stastisticData {
+            h1 {
+                padding-bottom: 2.5rem;
+            }
+
+            .statistics_data {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                width: 60%;
+                margin: 1rem auto 7rem;
+
+                h1 {
+                    color: #1885f3;
+                    font-size: 4rem;
+                    padding-bottom: .5rem;
+                }
+                p {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .topic_highlights{
+        padding-bottom: 8rem;
+        h1{
+        text-align: center;
+        padding: 7rem 0rem 1rem;
+        font-family: 'Roboto', sans-serif;
+        }
+    }
+
+    .who_will_you_meet{
+        background: url("https://ksa.futurebanksummit.com/wp-content/uploads/2023/05/business-economic-growth-global-business-network-data-analysis-financial-banking-1.jpg") no-repeat;
+        box-shadow: inset 0 0 0 1000px rgb(24, 93, 167,0.7);
+        background-size: cover;
+        color: white;
+        padding: 3rem 0rem;
+        background-attachment: fixed;
+        font-family: 'Roboto', sans-serif;
+        h1{
+            text-align: center;
+            padding-bottom: 3.5rem;
+        }
+        .who_will_you_meet_list_img{
+            width: 80%;
+            margin: 0rem auto;
+            display: grid;
+            grid-template-columns: auto auto;
+            ul{
+                padding: 0rem 7rem;
+                width: 70%;
+                li{
+                    font-size: 1rem;
+                    padding-bottom: 1.5rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .why_attend{
+        box-shadow: inset 0 0 0 1000px rgba(197, 199, 200, 0.4);
+        .why_attend_content_img{
+            width: 70%;
+            margin: 4rem auto 2rem;
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 2rem;
+            .why_attend_content{
+                padding: 1rem;
+                text-align: center;
+                h1{
+                    padding-bottom: 1rem;
+                }
+                p{
+                    font-size: 1rem;
+                    line-height: 1.3rem;
+                    letter-spacing: .1rem;
+                    text-align: justify;
+                }
+            }
+            .why_attend_img{
+                padding-top: 2.5rem;
+                .img{
+                    width:550px;
+                    height:280px;
+                    background-color: #6EC1E4;
+                }
+            }
+        }
+        h1{
+            color: #6EC1E4;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+        .why_attend_data{
+            width: 70%;
+            margin: 0rem auto 4rem;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 3rem;
+            row-gap: 5rem;
+            h1{
+                stroke-width: .7px;
+                -webkit-text-stroke-color: 1px;
+                -webkit-text-stroke-color: #fb7a02;
+                color: white;
+                text-align: center;
+                font-size: 66px;
+                text-shadow: 0 0 1px #020202;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+    .testimonials{
+        background: url("https://ksa.futurebanksummit.com/wp-content/uploads/2023/05/banner.jpg") no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: inset 0 0 0 1000px rgba(25, 111, 198, 0.7);
+        .testimonials_content{
+            width: 70%;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            padding-bottom: 3rem;
+            padding-top: 2rem;
+            .testimonials_heading{
+                display: flex;
+                color: white;
+                align-items: center;
+                font-size: 1.3rem;
+                padding-right: 1rem;
+            }
+            .testimonials_data{
+                border-radius: 30px;
+                height: 17rem;
+                color: black;
+                overflow-y: hidden;
+            }
+            @keyframes primary {
+                from {
+                    left: 0%;
+                }
+            
+                to {
+                    left: -100%;
+                }
+            
+            }
+            
+            @keyframes secondary {
+                from {
+                    left: 100%;
+                }
+            
+                to {
+                    left: 0%;
+                }
+            }
+            .primary{
+                animation : primary 5s linear infinite;
+            }
+            .secondary{
+                animation: secondary 5s linear infinite;
+            }
+        }
+    }
+
+    .contact{
+        background: url("https://ksa.futurebanksummit.com/wp-content/themes/emeet/assets/img/footer-bg.jpg") no-repeat ;
+        color: white;
+        .contact_content{
+            width:70%;
+            margin:3rem auto 6rem;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 5rem;
+            .content1{
+                img{
+                    width: 9rem;
+                    height: 4rem;
+                    margin: 1rem 0;
+                }
+            }
+            .content2{
+                p{
+                    padding: 1rem 0rem;
+                }
+                .socialMediaIcons{
+                    height:2rem;
+                    width:2rem;
+                    padding-right: 1rem;
+                }
+            }
+            .content3{
+                p{
+                    padding-top: 1rem;
+                }
+            }
+            
+        }
+        .contact_footer{
+            color: white;
+            text-align: center;
+            padding: 1rem 0rem 2rem;
+            font-size: .8rem;
+        }
+    }
+}

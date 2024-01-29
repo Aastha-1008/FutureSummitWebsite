@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+.highlightsDataCards {
+    max-width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: centers;
+    row-gap: 1rem;
+    column-gap: 2rem;
+
+    .highlights {
+        overflow: hidden;
+        margin: 0 auto;
+
+        .highlightkey {
+            position: absolute;
+            color: white;
+            background-color: #ff057c;
+            border-radius: 20px 0px 0px 0px;
+            text-align: center;
+            padding: .2rem .4rem;
+            font-family: 'Merienda', cursive;
+            font-size: 23px;
+        }
+
+        .highlightimagecontent {
+            padding: 1rem;
+            img {
+                margin-left: 4rem;
+            }
+        }
+
+        .highlightimg {
+            align-items: center;
+        }
+
+        p {
+            color: rgb(20, 63, 156);
+            font-family: 'Manrope', sans-serif;
+            text-align: center;
+            font-size: .9rem;
+        }
+    }
+    .highlights:last-child{
+        grid-column: 2/3;;
+    }
+
+    .highlights:hover {
+        transition: all 1s ease;
+        background-color: #1885F3;
+        border-radius: 20px 0px 0px 0px;
+
+        p {
+            color: white;
+        }
+    }
+}

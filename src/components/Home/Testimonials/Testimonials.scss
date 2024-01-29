@@ -1,0 +1,22 @@
+.testimonials_data{ 
+    .data_content_testimonial {
+        background-color: white;
+        color: black;
+        border-radius: 30px;
+        padding: 1.2rem 1.7rem;
+        display: inline-block;
+        .testimonals_reviews {
+            padding: 1rem 0rem;
+        }
+
+        .name {
+            float: left;
+            margin: 1rem;
+        }
+
+        .quotes {
+            right: 0%;
+            float: right;
+        }
+    }
+}
